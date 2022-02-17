@@ -2,7 +2,7 @@
 <object class="Robot2" serializationversion="2">
   <prologue>
     <saved-by-versions>
-      <version>11.1.0.2</version>
+      <version>11.2.0.6</version>
     </saved-by-versions>
     <file-type>robot2</file-type>
     <referenced-types/>
@@ -13,7 +13,7 @@
   <body>{
   "meta":{
     "className":"Robot",
-    "version":3
+    "version":4
   },
   "gizmo":{
     "parameters": [],
@@ -21,6 +21,15 @@
     "outputTypes": [],
     "treeModes": [],
     "types": [],
+    "cacheLock": {
+      "meta":{
+        "className":"CacheLock",
+        "version":0
+      },
+      "gizmo":{
+        
+      }
+    },
     "variables": [],
     "block": {
       "meta":{
@@ -31,7 +40,7 @@
         "steps": [{
           "meta":{
             "className":"BrowserActionStep",
-            "version":0
+            "version":1
           },
           "gizmo":{
             "name": {
@@ -45,7 +54,7 @@
             },
             "comment": {
               "meta":{
-                "className":"StepComment",
+                "className":"Comment",
                 "version":0
               },
               "gizmo":{
@@ -126,10 +135,19 @@
                                                         "expression": {
                                                           "meta":{
                                                             "className":"Expression",
-                                                            "version":0
+                                                            "version":1
                                                           },
                                                           "gizmo":{
-                                                            "text": { "string": "https://www.google.com" }
+                                                            "text": { "string": "https://www.google.com" },
+                                                            "comment": {
+                                                              "meta":{
+                                                                "className":"Comment",
+                                                                "version":0
+                                                              },
+                                                              "gizmo":{
+                                                                "comment": { "string": "" }
+                                                              }
+                                                            }
                                                           }
                                                         }
                                                       }
@@ -915,7 +933,7 @@
             },
             "comment": {
               "meta":{
-                "className":"StepComment",
+                "className":"Comment",
                 "version":0
               },
               "gizmo":{
@@ -925,7 +943,7 @@
             "branches": [{
               "meta":{
                 "className":"GuardAndBlock",
-                "version":3
+                "version":4
               },
               "gizmo":{
                 "guard": {
@@ -937,10 +955,19 @@
                     "seconds": {
                       "meta":{
                         "className":"Expression",
-                        "version":0
+                        "version":1
                       },
                       "gizmo":{
-                        "text": { "string": "60" }
+                        "text": { "string": "20" },
+                        "comment": {
+                          "meta":{
+                            "className":"Comment",
+                            "version":0
+                          },
+                          "gizmo":{
+                            "comment": { "string": "" }
+                          }
+                        }
                       }
                     }
                   }
@@ -952,6 +979,15 @@
                   },
                   "gizmo":{
                     "steps": []
+                  }
+                },
+                "comment": {
+                  "meta":{
+                    "className":"Comment",
+                    "version":0
+                  },
+                  "gizmo":{
+                    "comment": { "string": "" }
                   }
                 }
               }
@@ -975,7 +1011,7 @@
             },
             "comment": {
               "meta":{
-                "className":"StepComment",
+                "className":"Comment",
                 "version":0
               },
               "gizmo":{
